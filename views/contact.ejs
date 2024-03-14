@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT - Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body class="bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100">
+
+    <%-include('./partials/nav')%>
+
+    <div class="container mx-auto py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg p-6 shadow-md flex flex-col items-center transition-transform hover:-translate-y-2">
+                <div class="text-blue-500 text-4xl mb-4">
+                    <i class="ri-mail-line"></i>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg font-bold mb-2">EMAIL</h1>
+                    <p>Reach out via email for quick responses and inquiries.</p>
+                    <p class="mt-4">Email: info@restaurant.com</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-md flex flex-col items-center transition-transform hover:-translate-y-2">
+                <div class="text-blue-500 text-4xl mb-4">
+                    <i class="ri-phone-line"></i>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg font-bold mb-2">CALL</h1>
+                    <p>Speak directly to us over the phone for immediate assistance.</p>
+                    <p class="mt-4">Phone: +1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+        <section class="contact bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100" id="contact">
+            <h1 class="heading text-center text-4xl font-bold py-16"> <span>Contact</span> us </h1>
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.7754773737875!2d77.4627501748926!3d23.251255979014037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c43977890a98d%3A0x928a948dc6de732e!2sSheryians%20Coding%20School!5e0!3m2!1sen!2sin!4v1690905786705!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <form action="" class="bg-white p-8 rounded-lg shadow-md">
+                            <h3 class="text-2xl font-bold mb-4">Get in touch</h3>
+                            <div class="inputBox flex items-center mb-4">
+                                <span class="fas fa-user mr-2"></span>
+                                <input type="text" placeholder="Name" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div class="inputBox flex items-center mb-4">
+                                <span class="fas fa-envelope mr-2"></span>
+                                <input type="email" placeholder="Email" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div class="inputBox flex items-center mb-4">
+                                <span class="fas fa-phone mr-2"></span>
+                                <input type="number" placeholder="Phone number" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+                            </div>
+                            <input type="submit" value="Contact now" class="btn bg-blue-500 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-600 cursor-pointer">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+      
+    </div>
+
+    <%-include('./partials/footer')%>

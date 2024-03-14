@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/otp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Forget Password</title>
+</head>
+<body>
+
+
+<div class="container animate_animated animate_flipInX">
+  <h1>OTP Required</h1>
+
+  <form action="/match-otp/<%= email%>" method="POST">
+    <input type="number" placeholder="Enter OTP" name="otp" required />
+    <button type="submit">Confirm</button>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+<script>
+  // Assuming you have variables named success and error passed to the view
+  // You can customize this based on your actual implementation
+  var success = '<%= success%>';
+  // Check if there is a success message and show a SweetAlert
+  if (success) {
+      Swal.fire({
+          icon: 'success',
+          title: 'Email Sent Successfully',
+          text: success,
+      });
+  }
+
+</script>
+
+<!-- Include SweetAlert script if not already included -->
+
+</body>
+
+</html>

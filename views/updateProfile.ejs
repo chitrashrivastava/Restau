@@ -1,0 +1,23 @@
+<%- include('./partials/header') %>
+<%- include('./partials/nav') %>
+
+<div class="flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-md max-w-md">
+        <h1 class="text-3xl font-semibold mb-4 text-center text-white">Update Your Profile</h1>
+        <form method="post" action="/update">
+            <div class="mb-4">
+                <label for="username" class="text-sm text-white">Username:</label>
+                <input type="text" id="username" name="username" value="<%= buyer.username %>" class="bg-gray-700 text-white p-2 rounded-md w-full">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="text-sm text-white">Email:</label>
+                <input type="email" id="email" name="email" value="<%= buyer.email %>" class="bg-gray-700 text-white p-2 rounded-md w-full">
+            </div>
+            <button type="submit" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full focus:outline-none focus:ring focus:border-blue-300 w-full">
+                Save Changes
+            </button>
+        </form>
+    </div>
+</div>
+
+<%- include('./partials/footer') %>

@@ -1,0 +1,28 @@
+<%-include('./partials/header')%>
+<%-include('./partials/nav')%>
+
+<div class="bg-gray-100 py-12 flex justify-center">
+    <div class="container mt-[100px] px-4 flex flex-col items-center">
+        <h1 class="text-3xl font-bold mb-6">Seller Profile</h1>
+        <div class="bg-white rounded-lg overflow-hidden shadow-md w-full max-w-md">
+            <div class="p-6">
+                <div class="flex flex-col">
+                    <div class="col-span-2 md:col-span-1">
+                        <p class="text-lg"><strong>Company Name:</strong> <%= seller.companyname %></p>
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        <p class="text-lg"><strong>Email:</strong> <%= seller.email %></p>
+                    </div>
+                    <!-- Add more fields as needed -->
+                </div>
+            </div>
+            <!-- Buttons section -->
+            <div class="bg-gray-200 px-6 py-4 flex justify-end w-full">
+                <a href="/update/<%=id%>" class="bg-blue-500 text-white py-2 px-4 rounded-md mr-2 hover:bg-blue-600">Update</a>
+                <button class="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%-include('./partials/footer')%>

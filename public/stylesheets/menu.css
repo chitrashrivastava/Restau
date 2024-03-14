@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+   
+}
+.container{
+    width: 100%;
+    height: 90%;
+    background-image: url(https://marketplace.canva.com/EAFL51uKC5g/1/0/1131w/canva-black-modern-food-menu-portrait-A7bDXKlylB8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

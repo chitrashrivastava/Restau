@@ -1,0 +1,25 @@
+<nav class="bg-gradient-to-r from-cyan-500 from-purple-200 to-blue-500 fixed top-0 w-full z-[50] py-4">
+    <div class="container mx-auto flex items-center justify-between px-4">
+        <a href="/" class="text-black text-2xl font-bold">Restaurant Name</a>
+        <div class="flex items-center space-x-6">
+            <a href="/menu" class="text-black-400 text-[20px] hover:text-yellow-700">Menu</a>
+            <a href="/about" class="text-black-400 text-[20px] hover:text-yellow-700">About Us</a>
+            <a href="/contact" class="text-black-400 text-[20px] hover:text-yellow-700">Contact</a>
+            <% if (user && user.accountType === "Buyer") { %>
+                <a href="/buyer-profile" class="text-black-400 text-[20px] hover:text-yellow-700">Buyer Profile</a>
+                <a href="/explore-food" class="text-black-400 text-[20px] hover:text-yellow-700">Explore Food</a>
+            <% } else if (user && user.accountType === "Seller") { %>
+                <a href="/seller-profile" class="text-black-400 text-[20px] hover:text-yellow-700">Seller Profile</a>
+                <a href="/uploadproducts" class="text-black-400 text-[20px] hover:text-yellow-700">Upload Product</a>
+            <% } %>
+        </div>
+        <div>
+            <% if (user) { %>
+                <a href="/logout" class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 transition-colors duration-300">Logout</a>
+           <% } else {%>
+            
+            <a href="/login" class="bg-white text-black px-4 py-2 rounded-full hover:bg-gray-100 transition-colors duration-300">Login</a>
+            <%}%>
+        </div>
+    </div>
+</nav>

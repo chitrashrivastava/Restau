@@ -1,0 +1,22 @@
+<%-include('./partials/header')%>
+<%- include('./partials/nav') %>
+
+<div class=" text-white min-h-screen flex items-center justify-center">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-md max-w-md w-full">
+        <h1 class="text-4xl font-extrabold mb-6 text-center">Your Profile</h1>
+        <div class="mb-6 text-center">
+            <p class="text-lg"><strong>Username:</strong> <%= buyer.username %></p>
+            <p class="text-lg"><strong>Email:</strong> <%= buyer.email %></p>
+        </div>
+        <div class="flex justify-center space-x-4">
+            <a href="/update" class="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full focus:outline-none focus:ring focus:border-blue-300 transition duration-300">
+                Update
+            </a>
+            <a href="/delete/<%=id%>" class="flex items-center justify-center bg-red-500 hover:bg-red-600 text-white py-2 px-6 rounded-full focus:outline-none focus:ring focus:border-blue-300 transition duration-300">
+                Delete
+            </a>
+        </div>
+    </div>
+</div>
+
+<%- include('./partials/footer') %>

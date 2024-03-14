@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant</title> <!-- Corrected the title -->
+    <link rel="stylesheet" href="stylesheets/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+</head>
+<style>  
+.page2{
+    width: 100%;
+    height: 90%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page2_main{
+    width: 80vw;
+    height: 90vh;
+    /* background-color: peru; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top_page2{
+    width: 80vw;
+    height: 220px;
+    /* background-color: rgb(55, 159, 188); */
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+.mid_page2{
+    width: 80vw;
+    height: 220px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+
+}
+.bot_page2{
+    width: 80vw;
+    height: 220px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+.parts{
+    width: 19vw;
+    height: 28vh;
+    /* background-color: grey; */
+}
+.p1{
+    background-image: url(https://plus.unsplash.com/premium_photo-1680172800933-ae8462274162?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p1text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.p2{
+    background-image: url(https://images.unsplash.com/photo-1484980972926-edee96e0960d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+
+.p2text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.p3{
+    background-image: url(https://plus.unsplash.com/premium_photo-1675252369719-dd52bc69c3df?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p3text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.p4{
+    background-image: url(https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=1547&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p4text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.p5{
+    background-image: url(https://plus.unsplash.com/premium_photo-1664478291780-0c67f5fb15e6?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+
+.p5text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.p6{
+    background-image: url(https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p6text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p7{
+    background-image: url(https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p7text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p8{
+    background-image: url(https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p8text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.p10{
+    background-image: url(https://plus.unsplash.com/premium_photo-1673580742890-4af144293960?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p10text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.p11{
+    background-image: url(https://images.unsplash.com/photo-1520201163981-8cc95007dd2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p11text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.p9{
+    background-image: url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+}
+.p9text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.p12{
+    background-image: url(https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 19vw;
+    height: 24vh;
+    /* background-color: red; */
+    /* background-color: yellow; */
+}
+.p12text{
+    width: 19vw;
+    height: 3.6vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar {
+            background-image: linear-gradient(to right, #4F46E5, #8F94FB, #8F94FB, #4F46E5);
+            padding: 1rem 0;
+            text-transform: uppercase;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .navbar-links a {
+            color: white;
+            font-size: 20px; /* Increased font size */
+            margin-right: 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-links a:hover {
+            color: rgb(7, 7, 7);
+        }
+
+        .login-button {
+            background-color: rgb(54, 42, 231);
+            color: black;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 18px; /* Increased font size */
+        }
+
+        .login-button:hover {
+            background-color: #E5E5E5;
+        }
+    </style>
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-brand">Restaurant Name</a>
+            <div class="navbar-links">
+                <a href="/menu">Menu</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact</a>
+                <a href="/login" class="login-button">Sign In</a> <!-- Changed text to Sign In -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="page2">
+        <div class="page2_main">
+           <div class="top_page2">
+              <div class="parts  ">
+               <div class="p1"></div>
+               <div class="p1text">
+                   <h3>Purrweb UI/UX Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+
+              </div>
+              <div class="parts ">
+               <div class="p2"></div>
+               <div class="p2text">
+                   <h3>Sai niz UI/UX Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+                
+              </div>
+              <div class="parts">
+               <div class="p3"></div>
+               <div class="p3text">
+                   <h3>DKNG UI/UX Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+
+              </div>
+              <div class="parts ">
+               <div class="p4"></div>
+               <div class="p3text">
+                   <h3>Abu bokke Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+
+              </div> 
+           </div>
+           <div class="mid_page2">
+               <div class="parts ">
+                   <div class="p5"></div>
+               <div class="p5text">
+                   <h3>Monty hyto Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+
+               </div>
+              <div class="parts ">
+               <div class="p6"></div>
+               <div class="p6text">
+                   <h3>Extej Design Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+
+              </div>
+              <div class="parts">
+               <div class="p7"></div>
+               <div class="p7text">
+                   <h3>kakka UI Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+              </div>
+              <div class="parts">
+               <div class="p8"></div>
+               <div class="p8text">
+                   <h3>Purrweb UI/UX Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div>
+              </div> 
+           </div>
+           <div class="bot_page2">
+               <div class="parts">
+                   <div class="p9"></div>
+                   <div class="p9text">
+                       <h3>Orex creative......</h3>
+                      <div class="icon">
+                       <i class="ri-heart-3-line">220</i>
+                       <i class="ri-eye-fill">17.8k</i>
+                      </div>
+                   </div> 
+               </div>
+              <div class="parts">
+               <div class="p10"></div>
+               <div class="p10text">
+                   <h3>Helen UI Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div> 
+              </div>
+              <div class="parts">
+               <div class="p11"></div>
+               <div class="p11text">
+                   <h3>Squarespace Ag......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div> 
+              </div>
+              <div class="parts">
+               <div class="p12"></div>
+               <div class="p12text">
+                   <h3>Herrymate UI/UX......</h3>
+                   <div class="icon">
+                    <i class="ri-heart-3-line">220</i>
+                    <i class="ri-eye-fill">17.8k</i>
+                   </div>
+               </div> 
+              </div>  
+           </div>
+
+
+        </div>
+       </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+       
+</body>
+</html>
